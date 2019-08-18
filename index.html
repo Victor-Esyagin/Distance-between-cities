@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-10 col-12">
+                <input type="text" class="form-control" id="input-city1" placeholder="Пункт А">
+            </div>
+            <div class="col-md-3 col-sm-10 col-12"><input type="text" class="form-control" id="input-city2"
+                    placeholder="Пункт Б"></div>
+            <div class="col-md-auto col-sm-auto col-3">
+                <button type="button" class="btn btn-outline-secondary " id="go"> GO! </button>
+            </div>
+            <div class="col-md-auto col-sm-auto col-3">
+                <button type="button" class="btn btn-outline-secondary " id="clear">Clear</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12 logbook">
+                Журнал запросов:</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY">
+    </script>
+
+</body>
+
+</html>
