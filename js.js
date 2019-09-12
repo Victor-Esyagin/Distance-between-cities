@@ -17,8 +17,8 @@ btnGo.addEventListener('click', function () {
             'address': inputCity1.value,
         }, function (result, status) {
             if (status == 'OK') {
-                let lon1 = result[0].geometry.bounds.ga.j;
-                let lat1 = result[0].geometry.bounds.na.j;
+                let lon1 = result[0].geometry.bounds.ja.g;
+                let lat1 = result[0].geometry.bounds.na.g;
                 resolve([lat1, lon1]);
             } else {
                 let newp = document.createElement("p");
@@ -36,8 +36,8 @@ btnGo.addEventListener('click', function () {
             'address': inputCity2.value,
         }, function (result, status) {
             if (status == 'OK') {
-                let lon2 = result[0].geometry.bounds.ga.j;
-                let lat2 = result[0].geometry.bounds.na.j;
+                let lon2 = result[0].geometry.bounds.ja.g;
+                let lat2 = result[0].geometry.bounds.na.g;
                 resolve([lat2, lon2]);
             } else {
                 let newp = document.createElement("p");
@@ -81,7 +81,7 @@ btnGo.addEventListener('click', function () {
     })
 });
 
-//очищаем форму и логи результатов
+//очищаем форму и логи
 btnClear.addEventListener('click', function () {
     inputCity1.value = '';
     inputCity2.value = '';
